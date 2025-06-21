@@ -9,22 +9,22 @@ const Footer = () => {
     <div className="w-full h-full bg-white mt-10">
       {/* Icons Section with hover and divider */}
       <div className="flex justify-between items-center bg-[rgb(212,210,211)] w-full mb-8 px-2 sm:px-4 md:px-8 h-[120px] sm:h-[140px] md:h-[150px]">
-        {[makeinindia, support, caseon, free].map((img, index) => (
-          <div
-            key={index}
-            className="flex flex-1 justify-center items-center relative group"
-          >
-            <img
-              src={img}
-              alt="icon"
-              className="w-16 sm:w-20 md:w-42 transition duration-300"
-            />
-            {index !== 3 && (
-              <div className="hidden md:block absolute right-0 top-3 h-16 w-[2px] bg-gray-600" />
-            )}
-          </div>
-        ))}
-      </div>
+          {[makeinindia, support, caseon, free].map((img, index) => (
+            <div
+              key={index}
+              className="flex flex-1 justify-center items-center relative group"
+            >
+              <img
+                src={img}
+                alt="icon"
+                className="w-16 sm:w-20 cursor-pointer md:w-42 transform transition-transform duration-300 group-hover:scale-110"
+              />
+              {index !== 3 && (
+                <div className="hidden md:block absolute right-0 top-3 h-16 w-[2px] bg-gray-600" />
+              )}
+            </div>
+          ))}
+        </div>
       {/* Address & Contact Section */}
       <div className="w-full flex flex-col bg-[rgb(212,210,211)] md:flex-row justify-between gap-10 px-10 py-5 text-sm md:text-base">
         {/* Left: Logo + Address */}
